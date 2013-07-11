@@ -38,9 +38,9 @@ This is the Java API to create and publish datasets to the Socrata portal using 
 
 4) Step by step process
 	
-	a) Once the program is triggered it will look up the control table to check for any datasets with
-	   the status ‘Generated’, if any datasets are available then the following  values for 
-	   the dataset are retrieved from the database
+	a) 	Once the program is triggered it will look up the control table to check for any datasets with
+	   	the status ‘Generated’, if any datasets are available then the following  values for 
+	   	the dataset are retrieved from the database
 		
 			i.   Dataset_Id : Id of the dataset created in the Socrata portal
 				(if the dataset is not created this valus will be null)
@@ -51,7 +51,7 @@ This is the Java API to create and publish datasets to the Socrata portal using 
 			v.   DataDictionary_path: Path to the dataset list file.
 			vi.  Agency_Contact: Email address to send notification in case of failure 
 	
-	b) The polling duration is set based on the value set in the properties file.
+	b) 	The polling duration is set based on the value set in the properties file.
 	
 	c)	Java program flips the flag to ‘JavaStart ’in the database for the  data set listed 
 		in step a and start publishing the data set in a sequence 
