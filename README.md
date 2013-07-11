@@ -63,9 +63,9 @@ This is the Java API to create and publish datasets to the Socrata portal using 
 		(java.util.concurrent.ThreadPoolExecutor) whose core and max pool size are set to 
 		three (So three threads can run concurrently).
 	
-	f)  	If the dataset id is not null then the steps  (h) to (k) are followed.
+	f)  If the dataset id is not null then the steps  (h) to (k) are followed.
 	
-	g)  	If the dataset id is null then the data set file and data dictionary file are read to
+	g)  If the dataset id is null then the data set file and data dictionary file are read to
 		get the necessary details and the dataset is created
 		(Make sure the data set file and data dictionary file are in the same directory and the
 		location of the dataset list file should be provided in the DB in the DataDictionary_path field) 
