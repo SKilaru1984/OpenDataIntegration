@@ -38,13 +38,16 @@ This is the Java API to create and publish datasets to the Socrata portal using 
 
 4) Step by step process
 	
-	a) Once the program is triggered it will look up the control table to check for any datasets with the status ‘Generated’, 
-		if any datasets are available then the following  values for the dataset are retrieved from the database
+	a) Once the program is triggered it will look up the control table to check for any datasets with
+	   the status ‘Generated’, if any datasets are available then the following  values for 
+	   the dataset are retrieved from the database
 		
-			i.   Dataset_Id : Id of the dataset created in the Socrata portal(if the dataset is not created this valus will be null)
+			i.   Dataset_Id : Id of the dataset created in the Socrata portal
+				(if the dataset is not created this valus will be null)
 			ii.  DataSet_Name: Name of the dataset.
 			iii. Flag: Upsert-U or Append-A or Replace-R
-			iv.  DataFile_Path: Path to the data file (Sample data file can be found in src/test/resources folder ).
+			iv.  DataFile_Path: Path to the data file 
+				(Sample data file can be found in src/test/resources folder ).
 			v.   DataDictionary_path: Path to the dataset list file.
 			vi.  Agency_Contact: Email address to send notification in case of failure 
 	
@@ -67,7 +70,8 @@ This is the Java API to create and publish datasets to the Socrata portal using 
 		(Make sure the data set file and data dictionary file are in the same directory and the
 		location of the dataset list file should be provided in the DB in the DataDictionary_path field) 
 	
-	h)	The Flag associated with each dataset is checked and depending on the value of the flag one the following operations is performed
+	h)	The Flag associated with each dataset is checked and depending on the value of the flag one
+		the following operations is performed
 		i.   Upsert
 		ii.  Append
 		iii. Replace
