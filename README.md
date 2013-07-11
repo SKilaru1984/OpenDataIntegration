@@ -1,5 +1,7 @@
 This is the Java API to create and publish datasets to the Socrata portal using the Socrata Open Data API (SODA).
+
 1) To create the dataset we will need the dataset list and the data dictionary files.
+	
 	a) The dataset list contains the metadata required for the dataset.
 	b) The data dictionary contains  the column names and their description.
 	c) The dataset list file and the data dictionary file should be placed in the same folder.
@@ -8,6 +10,7 @@ This is the Java API to create and publish datasets to the Socrata portal using 
 2) The JDK should be 1.6 or greater.
 
 3) Prerequisites: For this program to run successfully 
+
 	a) The database tables and procedures have to be created and the database connection details have
 		to be updated in the properties file which can be found under src/main/resources folder
 		
@@ -33,8 +36,10 @@ This is the Java API to create and publish datasets to the Socrata portal using 
 	
 
 4) Step by step process
-	a)	Once the program is triggered it will look up the control table to check for any datasets with the status ‘Generated’, 
+	
+	a) Once the program is triggered it will look up the control table to check for any datasets with the status ‘Generated’, 
 		if any datasets are available then the following  values for the dataset are retrieved from the database
+		
 			i.   Dataset_Id : Id of the dataset created in the Socrata portal(if the dataset is not created this valus will be null)
 			ii.  DataSet_Name: Name of the dataset.
 			iii. Flag: Upsert-U or Append-A or Replace-R
